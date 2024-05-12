@@ -1,0 +1,81 @@
+
+.sec1{
+    display: flex;
+}
+.sec2 img{
+  width:800px;
+  height:200px;
+  margin:15px;
+}
+  
+.flightcont {
+    display: flex;
+  }
+  
+  .flightcard1 {
+    position: relative;
+    width: 600px;
+    margin-left: 40px;
+  }
+  
+  .flightcard1 img {
+    width: 600px;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 100px;
+    transition: transform 0.5s ease;  
+  }
+  
+  .flightcard1:hover img {
+    transform: scale(1.1);
+  }
+  .button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #230eac;
+    color: #faf1f1;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.button2{
+
+    display: block;
+    padding: 10px 20px;
+    background-color: #0eac55;
+    color: #faf1f1;
+    text-decoration: none;
+    margin-bottom: 10px;
+
+}
+.overlay {
+    position: absolute;
+    bottom: 10px;
+    right:-80px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.flightcard1:hover .overlay {
+    opacity: 1;
+}
+/* @media only screen and (max-width:768px) {
+  .section2{
+   
+  }
+  
+} */
+
+@media (max-width: 768px) {
+  .sec1 {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .flightcont {
+    flex-direction: column;
+  }
+}
+
+  
+  
